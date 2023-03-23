@@ -6,12 +6,18 @@
 }
 body{
     background-color: #1A472A;
+    text-align: center;
 }
+
 p{
     color: #aaaaaa;
     font-size: 60px;
     font-family: Harry;
     
+}
+h1{
+    font-size: 72px;
+    font: 100;
 }
 h1, h2{
     color: #aaaaaa;
