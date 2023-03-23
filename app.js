@@ -8,4 +8,6 @@ app.get("/target-time", (req, res)=>{
     res.end()
 })
 
-app.listen(8000)
+app.listen(8000, "127.0.0.1", ()=>{
+    console.log("Running on port 3000")
+})
