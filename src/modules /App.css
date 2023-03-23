@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Harry';
+    src: local('Harry'),
+    url('../fonts/harry-p-font/HarryP.ttf');
+
+}
+body{
+    background-color: #1A472A;
+}
+p{
+    color: #aaaaaa;
+    font-size: 60px;
+    font-family: Harry;
+    
+}
+#clock{
+    position: absolute;
+}
+
+.tik{
+    position: absolute;
+    width: 250px;
+}
+
+li{
+    list-style: none;
+}
