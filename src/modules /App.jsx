@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "./App.css"
-import clock from "./Clock.png"
-import tik from "./tik.png"
 
 class App extends Component {
     state = {
