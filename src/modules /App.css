@@ -13,6 +13,11 @@ p{
     font-family: Harry;
     
 }
+h1, h2{
+    color: #aaaaaa;
+    letter-spacing: 0.2em;
+    font-family: Harry;
+}
 #clock{
     position: absolute;
 }
@@ -24,4 +29,8 @@ p{
 
 li{
     list-style: none;
+    margin: 1em;
+}
+ul{
+    display: flex;
 }

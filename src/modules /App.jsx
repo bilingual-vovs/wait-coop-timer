@@ -33,41 +33,33 @@ class App extends Component {
     }
     render() {
         let {years, mounth, days, hours, minutes, seconds, milisec} = this.state
-        let mounthPercent = 12 / mounth
-        let mounthStyle = {
-            transform: `rotate(${-90+360-360/mounthPercent}deg)`,
-            left: 133+125*(1-Math.cos(360/mounthPercent)) + "px" ,
-            top: 160+125*Math.sin(360/mounthPercent) + "px"
-        }
-        let daysPercent = 31 / days
-        let daysStyle = {
-            transform: `rotate(${-90+360-360/daysPercent}deg)`
-        }
-        let hoursPercent = 24 / hours
-        let hoursStyle = {
-            transform: `rotate(${-90+360-360/hoursPercent}deg)`
-        }
-        let minutesPercent = 60 / minutes
-        let minutesStyle = {
-            transform: `rotate(${-90+360-360/minutesPercent}deg)`,
-            left: 125+125*Math.cos(360/minutesPercent) + "px",
-            top: 125+125*Math.sin(360/minutesPercent) + "px"
-        }
-        let secondsPercent = 60 / seconds
-        let secondsStyle = {
-            transform: `rotate(${-90+360-360/secondsPercent}deg)`,
-            left: 133+125*Math.cos(-90+360-360/secondsPercent) + "px" ,
-            top: 160+125*Math.cos(-90+360-360/secondsPercent) + "px"
-        }
         return (
             <div>
-                <img id='clock' src={clock} alt="clock"/>
-                <img style={mounthStyle} className='tik' id='mounth' src={tik} alt="tik"/>
-                <img style={daysStyle} className='tik' id='day' src={tik} alt="tik"/>
-                <img style={hoursStyle} className='tik' id='hours' src={tik} alt="tik"/>
-                <img style={minutesStyle} className='tik' id='minutes' src={tik} alt="tik"/>
-                <img style={secondsStyle} className='tik' id='seconds' src={tik} alt="tik"/>
-                <img style={mounthStyle} className='tik' id='milisec' src={tik} alt="tik"/>
+                <h1>Till we meet with Kristinika</h1>
+                <ul>
+                    <li>
+                        <p>{years} y.</p>
+                    </li>
+                    <li>
+                        <p>{mounth} m.</p>
+                    </li>
+                    <li>
+                        <p>{days} d.</p>
+                    </li>
+                    <li>
+                        <p> {hours} :</p>
+                    </li>
+                    <li>
+                        <p> {minutes} :</p>
+                    </li>
+                    <li>
+                        <p> {seconds} :</p>
+                    </li>
+                    <li>
+                        <p> {milisec}</p>
+                    </li>
+                </ul>
+                <h2>P. S. - That is no UA version of this amazing font, so.</h2>
             </div>
             
         );
