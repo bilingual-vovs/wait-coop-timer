@@ -12,7 +12,7 @@ class App extends Component {
             seconds: 0
     }
     componentDidMount = () => {
-        this.target = new Date("2023-03-26 12:00")
+        this.target = new Date("2023-03-26 10:00")
         setInterval(this.update, 1)
     }
     update = () => {
@@ -22,7 +22,7 @@ class App extends Component {
         this.setState({
             years: res.getFullYear()-1970 ,
             mounth: res.getMonth() ,
-            days: res.getDate() ,
+            days: res.getDate()-1 ,
             hours: res.getHours(),
             minutes: res.getMinutes() ,
             seconds: res.getSeconds(),
